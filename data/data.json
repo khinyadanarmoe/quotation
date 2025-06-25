@@ -1,0 +1,26 @@
+[
+  {
+    "quantity": 1,
+    "description": "Premium Dog Food - Chicken & Rice (10kg)",
+    "unitPrice": 90.00,
+    "amount": 90.00
+  },
+  {
+    "quantity": 1,
+    "description": "Cat Tree Tower - Medium Size",
+    "unitPrice": 60.00,
+    "amount": 60.00
+  },
+  {
+    "quantity": 2,
+    "description": "Pet Bowl - Stainless Steel (Large)",
+    "unitPrice": 200.00,
+    "amount": 400.00
+  },
+  {
+    "quantity": 1,
+    "description": "Pet Hoodie - Size M (Blue with Paw Print)",
+    "unitPrice": 250.00,
+    "amount": 250.00
+  }
+]

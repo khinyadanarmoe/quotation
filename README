@@ -1,0 +1,21 @@
+# Amoe's Pet Supplies 
+
+![Pet Supplies Shop](img/cat.jpg)
+
+A web-based quotation system for Amoe's Pet Supplies store, allowing staff to generate customer quotations with itemized lists, calculations, and professional formatting.
+
+## Features
+
+- 📝 Create and manage customer quotations
+- ➕ Add/remove items with descriptions, quantities, and prices
+- 🧮 Automatic calculation of subtotals, tax (7%), and totals
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Bootstrap 5
+- jQuery
+- Font Awesome (for icons)
+

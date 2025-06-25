@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <title>Sample Quotation</title>
+    <meta name="description" content="Company quotation">
+    <meta name="author" content="SitePoint">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="store_info">
+        <div id="logo">
+            <img id="shop_img" src="./img/cat.jpg" alt="" width="200">
+            <p><I>Shop for premium pet supplies!</I></p>
+        </div>
+        <div id="contact">
+            <h1><Strong>Amoe's</Strong> <h3>Pet Supplies</h3></h1> 
+            <br />
+            <p>📍 : 88 หมู่ที่ 8 ถนน บางนา-ตราด Bang Sao Thong District, Samut Prakan 10540</p>
+            <a href="tel:+66123333333">📞 : +66 123333333</a> <br />
+            <a href="mailto:amoe.retail@example.com">✉️ : amoe.retail@example.com</a>
+            <br /><br />
+            <p>Visit us to make your pets happy! 🐱🐶</p>
+        </div>
+    </div>
+
+
+    <div class="container px-4 py-2" id="featured-2">
+        <div class="row g-4 py-2 row-cols-1 row-cols-lg-3">
+
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Customer: </h3>
+                <p>
+                    <strong>Ms. Lisa Bennett</strong><br>
+                    1/1 Moo. Navamin Street<br>
+                    Samut Prakan<br>
+                    Phone: (66) 12345678
+                </p>
+
+            </div>
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Ship To: </h3>
+                <p>1/1 Moo. Navamin Street<br>
+                    Samut Prakan<br></p>
+            </div>
+        </div>
+        
+        <span style="float:right;">
+            Date: <script>document.write(new Date().toLocaleDateString());</script>
+        </span>
+    </div>
+    <hr />
+
+    <div id="deli_info">
+        <table class="center">
+            <thead>
+                <tr>
+                    <th>Salesperson</th>
+                    <th>Your P.O. No.</th>
+                    <th>Date Shipped</th>
+                    <th>Shipped Via</th>
+                    <th>F.O.B Point</th>
+                    <th>Terms</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="bottom-line">
+                    <td class="data">Administrator</td>
+                    <td class="data">Sample PO#</td>
+                    <td class="data">2011/3/18</td>
+                    <td class="data">Courier Services</td>
+                    <td class="data">U.S.A</td>
+                    <td class="data">2 Weeks</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr/>
+
+    <button type="button" class="btn btn-primary" id="add-item-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-bs-whatever="@mdo" style="margin:20px">Add Item</button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add Item</h1>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3 d-flex justify-content-between align-items-center">
+                            <label for="description" class="col-form-label" style="width: 150px;">Description</label>
+                            <input type="text" class="form-control" id="description" style="width: 60%;">
+                        </div>
+
+                        <div class="mb-3 d-flex justify-content-between align-items-center">
+                            <label for="price-per-unit" class="col-form-label" style="width: 150px;">Price Per
+                                Unit</label>
+                            <input type="number" class="form-control" id="price-per-unit" style="width: 60%;">
+                        </div>
+
+                        <div class="mb-3 d-flex justify-content-between align-items-center">
+                            <label for="quantity" class="col-form-label" style="width: 150px;">Quantity</label>
+                            <input type="number" class="form-control" id="quantity" style="width: 60%;">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="addItem()">Save New Item</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="center" id="quotationTable">
+        <thead>
+            <tr>
+                <th>Quantity</th>
+                <th>Description</th>
+                <th>Unit Price</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody id="dataTable">
+
+        </tbody>
+        <tfooter>
+
+            <tr id="sub-total">
+                <td colspan="3" class="data2 r colo" style="padding-right:20px;"> Subtotal</td>
+                <td colspan="2" class="data2 r" id="bottom-line">
+                    <span id="subTotal"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="data2 r colo" style="padding-right:20px;"> Sales Tax</td>
+                <td colspan="1" class="data2 r" id="bottom-line"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="data2 r colo" style="padding-right:20px;"> Shipping &amp; Handling</td>
+                <td colspan="1" class="data2 r" id="bottom-line">0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="data2 r colo" style="padding-right:20px;"> Total Due</td>
+                <td colspan="1" class="data2 r" id="bottom-line"></td>
+            </tr>
+        </tfooter>
+    </table>
+
+    <br>
+
+    <p class="cen">
+        <b>Make all checks payable to:</b>
+        <br><i>Amoe's Pet Supplies</i>
+        <br><b>If you have any question concerning this invoices, call: <a href="tel:+66123333333">📞 : +66
+                123333333</a></b>
+        <br>
+        <br><b>THANK YOU FOR SHOPPING WITH US ❤️</b>
+    </p>
+
+
+    <footer><b><I>Khin Yadanar Moe</I></b></footer>
+
+    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- <script src="js/script2.js"></script> -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>

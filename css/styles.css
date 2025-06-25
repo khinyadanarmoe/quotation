@@ -1,0 +1,146 @@
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: rgb(184, 212, 231);
+    color: darkblue;
+    border: solid #000000 1px;
+}
+
+td {
+    vertical-align: top;
+}
+
+#sub-total {
+    border-top: solid #000 1px;
+}
+
+#bottom-line {
+    border-bottom: solid #000 1px;
+}
+
+.data {
+    border-left: solid #000000 1px;
+    border-right: solid #000000 1px;
+}
+
+.data2 {
+    border-right: solid #000000 1px;
+}
+
+p.i {
+    font-style: italic;
+  }
+
+.r {
+    text-align: right;
+}
+
+.cen {
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+  }
+
+.colo {
+    font-weight: bold;
+    color: darkblue;
+}
+
+.thick {
+    font-weight: bold;
+}
+
+.tab { 
+    display:inline-block; 
+    margin-left: 40px; 
+}
+
+#shop_img{
+    border-radius: 50%;
+    width: 150px;
+    border: 4px solid #397a89;
+    padding: 8px;
+    margin-bottom: 10px
+}
+
+#store_info{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding-left: 20px
+}
+
+#logo {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    max-width: 200px;
+    padding: 20px;
+}
+
+#contact{
+    padding: 40px;
+}
+
+#featured-2{
+    padding: 20px
+}
+
+.center{
+    text-align: center;
+
+}
+
+#deli_info{
+    padding: 20px; 
+}
+
+#deli_info th{
+    background-color: #397a89;
+    color: white;
+    text-align: center;
+}
+
+
+#description{
+    width: 300px
+
+}
+
+#price-per-unit{
+    width: 300px;
+}
+
+#quantity{
+    width: 300px;
+}
+
+#quotationTable{
+    text-align: left;
+}
+
+#add-item-btn{
+    background-color: #397a89;
+}
+
+#featured-2 h3{
+    color: #0c5869;
+    font-weight: bold
+}
+
+#dataTable {
+    background-color: rgb(250, 253, 255);
+}
+
+#quotationTable th {
+    background-color: #397a89;
+    color: white;
+    text-align: center;
+    
+}
